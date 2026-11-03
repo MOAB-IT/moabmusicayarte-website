@@ -349,13 +349,8 @@ html[data-lang="en"] .musical-promo-when span[data-i18n-es], html[data-lang="es"
 .sponsor-signup{display:grid; grid-template-columns:1fr 1fr; gap:48px; align-items:start;}
 .sponsor-contact{list-style:none; padding:0; margin:0; display:flex; flex-direction:column; gap:8px;}
 .sponsor-contact a{color:var(--accent-dark); font-weight:600; text-decoration:none;}
-.sponsor-widget{min-height:260px; display:flex; align-items:center; justify-content:center;}
-.sponsor-widget-placeholder{
-  width:100%; min-height:260px; border:2px dashed var(--neutral-400); border-radius:var(--radius);
-  display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center; padding:24px;
-  background:rgba(255,253,248,0.6);
-}
-.sponsor-widget-placeholder p{margin:4px 0; color:var(--brown);}
+.sponsor-widget{width:100%; max-width:440px; justify-self:end;}
+.sponsor-widget givebutter-widget{display:block; width:100%;}
 
 /* TESTIMONIALS */
 .testimonials{background:var(--neutral-100); color:var(--ink);}
@@ -420,6 +415,7 @@ footer{background:var(--ink); color:var(--neutral-300); padding:56px 0 24px;}
   .tier-grid{grid-template-columns:repeat(2,1fr); row-gap:30px;}
   .musical-promo-body{grid-template-columns:1fr; gap:20px;}
   .musical-promo .hero-ctas{justify-content:flex-start;}
+  .sponsor-widget{justify-self:center;}
   .musical-promo h2{font-size:2rem;}
   .events-feature-text{padding:0 24px 24px;}
   .program-grid, .support-grid{grid-template-columns:repeat(2,1fr);}
