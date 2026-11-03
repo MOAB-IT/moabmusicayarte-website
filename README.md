@@ -17,18 +17,17 @@ A bilingual (EN/ES) static website for MOAB Música y Arte, an independent nonpr
 │   ├── events.html      Events gallery
 │   ├── support.html     Donate / support options
 │   └── faq-contact.html FAQ + Contact info (merged)
-├── images/              Reserved for locally hosted images (currently images are
-│                        hotlinked from moabacademiademusica.com — see note below)
+├── images/              Locally hosted images (logo, team, programs, events,
+│                        gallery, icons, testimonials, support)
 └── data/                Reserved for structured content (team, events, programs)
                          if the site is later migrated to a templated/data-driven build
 ```
 
 ## Notes
 
-- **Images**: All photos currently reference the original organization's WordPress media
-  library (`moabacademiademusica.com/wp-content/uploads/...`). Since this is now an
-  independent site, consider downloading and re-hosting these assets locally in `images/`
-  and updating the `<img>`/`<figure>` sources across the HTML files.
+- **Images**: All images are hosted locally in `images/` (originally copied from the
+  previous WordPress media library). Large photos were resized to max 1600px and
+  re-compressed; full-page event flyers were converted from PNG to JPEG.
 - **Donation links**: The Zeffy donation form and WhatsApp payment links still point to the
   original organization's accounts. Update these once the nonprofit has its own donation
   processor set up.
