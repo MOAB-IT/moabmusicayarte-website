@@ -308,6 +308,18 @@ section{padding:76px 0;}
 .event-highlights strong{font-size:1.6rem; font-weight:800; color:var(--accent-dark); min-width:96px;}
 .event-highlights span{color:var(--brown); font-size:0.97rem;}
 html[data-lang="en"] .event-highlights span[data-i18n-en], html[data-lang="es"] .event-highlights span[data-i18n-es]{display:inline;}
+.colombia-callout{
+  display:flex; gap:16px; align-items:stretch; margin-top:22px; padding:18px 20px;
+  background:var(--cream); border:1px solid var(--border); border-radius:var(--radius);
+}
+.colombia-flag{
+  flex-shrink:0; width:8px; border-radius:4px;
+  background:linear-gradient(to bottom, #FCD116 0 50%, #003893 50% 75%, #CE1126 75% 100%);
+}
+.colombia-callout h3{margin:0 0 6px; font-size:1.08rem; color:var(--ink);}
+.colombia-callout p{margin:0; font-size:0.97rem; color:var(--brown);}
+.event-highlights li.highlight-colombia{border-left-color:#FCD116;}
+.flag-co{display:inline-block; width:42px; height:28px; border-radius:4px; box-shadow:0 0 0 1px rgba(46,35,24,0.12); background:linear-gradient(to bottom, #FCD116 0 50%, #003893 50% 75%, #CE1126 75% 100%); vertical-align:middle;}
 .event-donate-amounts{max-width:680px; margin:26px auto 0; text-align:center;}
 .event-donate-amounts p{margin:0 0 12px; color:var(--brown);}
 .event-donate-amounts p strong{display:block; color:var(--ink);}
