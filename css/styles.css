@@ -107,6 +107,8 @@ nav a.active{color:var(--yellow); font-weight:700;}
 .btn-gold{background:var(--accent-dark); color:#fff;}
 .btn-gold:hover{transform:translateY(-2px); box-shadow:0 8px 18px rgba(181,82,43,0.35);}
 givebutter-widget{display:inline-block;}
+.btn-yellow{background:var(--yellow); color:var(--ink);}
+.btn-yellow:hover{transform:translateY(-2px); box-shadow:0 8px 18px rgba(247,201,72,0.45);}
 .btn-outline{border:1.5px solid var(--ink); color:var(--ink); background:transparent;}
 .btn-outline:hover{background:rgba(46,35,24,0.06);}
 
@@ -197,8 +199,11 @@ html[data-lang="en"] .musical-promo-when span[data-i18n-es], html[data-lang="es"
 .musical-promo .hero-ctas{margin-top:0;}
 .btn-light{border:1.5px solid var(--neutral-100); color:var(--neutral-100); background:transparent;}
 .btn-light:hover{background:rgba(255,255,255,0.1);}
-.musical-promo-sponsor{display:inline-block; margin-top:20px; color:var(--yellow); font-weight:600; font-size:0.92rem; text-decoration:none;}
-.musical-promo-sponsor:hover{text-decoration:underline;}
+.musical-promo-sponsor{
+  display:inline-block; margin-top:16px; color:var(--yellow); font-weight:700; font-size:0.95rem; text-decoration:none;
+  border:1.5px solid var(--yellow); border-radius:999px; padding:9px 20px; transition:background .18s ease, color .18s ease;
+}
+.musical-promo-sponsor:hover{background:var(--yellow); color:var(--ink);}
 
 .mission{background:var(--paper);}
 .mission-grid{display:grid; grid-template-columns:1.1fr 0.9fr; gap:48px; align-items:center;}
