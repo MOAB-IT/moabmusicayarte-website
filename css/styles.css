@@ -14,6 +14,8 @@
   --orange:#F39C34;
   --accent:#D46A32;
   --accent-dark:#B5522B;
+  /* Sponsor color: Pantone 137 C. Use with dark (--ink) text, never white. */
+  --sponsor:#F39C34;
   /* Darks: menu & main text */
   --ink:#2E2318;
   --brown:#3F2F22;
@@ -107,8 +109,8 @@ nav a.active{color:var(--yellow); font-weight:700;}
 .btn-gold{background:var(--accent-dark); color:#fff;}
 .btn-gold:hover{transform:translateY(-2px); box-shadow:0 8px 18px rgba(181,82,43,0.35);}
 givebutter-widget{display:inline-block;}
-.btn-yellow{background:var(--yellow); color:var(--ink);}
-.btn-yellow:hover{transform:translateY(-2px); box-shadow:0 8px 18px rgba(247,201,72,0.45);}
+.btn-sponsor{background:var(--sponsor); color:var(--ink);}
+.btn-sponsor:hover{transform:translateY(-2px); box-shadow:0 8px 18px rgba(243,156,52,0.45);}
 .btn-outline{border:1.5px solid var(--ink); color:var(--ink); background:transparent;}
 .btn-outline:hover{background:rgba(46,35,24,0.06);}
 
@@ -200,10 +202,10 @@ html[data-lang="en"] .musical-promo-when span[data-i18n-es], html[data-lang="es"
 .btn-light{border:1.5px solid var(--neutral-100); color:var(--neutral-100); background:transparent;}
 .btn-light:hover{background:rgba(255,255,255,0.1);}
 .musical-promo-sponsor{
-  display:inline-block; margin-top:16px; color:var(--yellow); font-weight:700; font-size:0.95rem; text-decoration:none;
-  border:1.5px solid var(--yellow); border-radius:999px; padding:9px 20px; transition:background .18s ease, color .18s ease;
+  display:inline-block; margin-top:16px; color:var(--sponsor); font-weight:700; font-size:0.95rem; text-decoration:none;
+  border:1.5px solid var(--sponsor); border-radius:999px; padding:9px 20px; transition:background .18s ease, color .18s ease;
 }
-.musical-promo-sponsor:hover{background:var(--yellow); color:var(--ink);}
+.musical-promo-sponsor:hover{background:var(--sponsor); color:var(--ink);}
 
 .mission{background:var(--paper);}
 .mission-grid{display:grid; grid-template-columns:1.1fr 0.9fr; gap:48px; align-items:center;}
@@ -256,6 +258,12 @@ html[data-lang="en"] .musical-promo-when span[data-i18n-es], html[data-lang="es"
 .statement p{margin-bottom:16px; font-size:1.02rem;}
 .statement .btn{margin-top:10px; background:var(--accent-dark); color:#fff;}
 .statement .btn:hover{transform:translateY(-2px); box-shadow:0 8px 18px rgba(181,82,43,0.35);}
+.statement .btn.btn-sponsor{background:var(--sponsor); color:var(--ink);}
+.statement .btn.btn-sponsor:hover{box-shadow:0 8px 18px rgba(243,156,52,0.45);}
+/* Sponsor page accents */
+.sponsor-page .event-date-month{background:var(--sponsor); color:var(--ink);}
+.sponsor-page .event-facts{border-top:5px solid var(--sponsor);}
+.sponsor-page .sponsor-date{border-left:5px solid var(--sponsor);}
 
 .faq{background:var(--cream);}
 .faq-item{
@@ -337,10 +345,11 @@ html[data-lang="en"] .musical-promo-when span[data-i18n-es], html[data-lang="es"
 .tier-price{font-size:2rem; font-weight:800; color:var(--accent-dark); margin:4px 0 16px;}
 .tier-card ul{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:10px;}
 .tier-card li{position:relative; padding-left:22px; font-size:0.9rem; color:var(--brown); line-height:1.45;}
-.tier-card li::before{content:"\2713"; position:absolute; left:0; top:0; color:var(--accent); font-weight:700;}
-.tier-featured{border:2px solid var(--accent-dark);}
+.tier-card li::before{content:"\2713"; position:absolute; left:0; top:0; color:var(--sponsor); font-weight:800;}
+.tier-card{border-top:5px solid var(--sponsor);}
+.tier-featured{border:2px solid var(--sponsor); border-top-width:5px;}
 .tier-badge{
-  position:absolute; top:-13px; left:22px; background:var(--accent-dark); color:#fff; font-size:0.7rem; font-weight:700;
+  position:absolute; top:-13px; left:22px; background:var(--sponsor); color:var(--ink); font-size:0.7rem; font-weight:700;
   text-transform:uppercase; letter-spacing:1px; padding:4px 12px; border-radius:999px;
 }
 .sponsor-dates{display:grid; grid-template-columns:repeat(3,1fr); gap:22px;}
