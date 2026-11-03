@@ -28,9 +28,11 @@ A bilingual (EN/ES) static website for MOAB Música y Arte, an independent nonpr
 - **Images**: All images are hosted locally in `images/` (originally copied from the
   previous WordPress media library). Large photos were resized to max 1600px and
   re-compressed; full-page event flyers were converted from PNG to JPEG.
-- **Donation links**: The Zeffy donation form and WhatsApp payment links still point to the
-  original organization's accounts. Update these once the nonprofit has its own donation
-  processor set up.
+- **Donations**: Donate buttons use the Givebutter widget (`<givebutter-widget id="j2OKJa">`),
+  loaded by the Givebutter library script in each page's `<head>`. The button's text and
+  color are configured in the Givebutter dashboard. The membership button (Support page)
+  still links to Zeffy, and the WhatsApp payment links still point to the original
+  organization's accounts.
 - **Language toggle**: Implemented via `data-i18n-en` / `data-i18n-es` spans and a small
   CSS/JS switch. The chosen language persists across page loads via `localStorage`.
 - **No build tools required.** All pages share `css/styles.css` and `js/script.js` via

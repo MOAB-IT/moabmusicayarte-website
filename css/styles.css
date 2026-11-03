@@ -87,6 +87,7 @@ nav a.active{color:var(--yellow); font-weight:700;}
 }
 .btn-gold{background:var(--accent-dark); color:#fff;}
 .btn-gold:hover{transform:translateY(-2px); box-shadow:0 8px 18px rgba(181,82,43,0.35);}
+givebutter-widget{display:inline-block;}
 .btn-outline{border:1.5px solid var(--ink); color:var(--ink); background:transparent;}
 .btn-outline:hover{background:rgba(46,35,24,0.06);}
 
@@ -195,7 +196,7 @@ section{padding:76px 0;}
 }
 .support-card h3{margin:0; font-size:1.2rem; color:var(--ink);}
 .support-card p{color:var(--muted); font-size:0.96rem; margin:0; flex-grow:1;}
-.support-card .btn{align-self:flex-start;}
+.support-card .btn, .support-card givebutter-widget{align-self:flex-start;}
 .support-card .tag{
   align-self:flex-start; background:var(--yellow-light); color:var(--brown); font-size:0.72rem; font-weight:700;
   text-transform:uppercase; letter-spacing:0.8px; padding:4px 10px; border-radius:999px;
