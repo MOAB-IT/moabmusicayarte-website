@@ -307,6 +307,7 @@ section{padding:76px 0;}
 .event-highlights li{display:flex; align-items:center; gap:18px; padding:18px 22px; background:var(--cream); border:1px solid var(--border); border-left:5px solid var(--accent-dark); border-radius:var(--radius);}
 .event-highlights strong{font-size:1.6rem; font-weight:800; color:var(--accent-dark); min-width:96px;}
 .event-highlights span{color:var(--brown); font-size:0.97rem;}
+.event-highlights strong span{color:inherit; font-size:inherit;}
 html[data-lang="en"] .event-highlights span[data-i18n-en], html[data-lang="es"] .event-highlights span[data-i18n-es]{display:inline;}
 .event-donate-amounts{max-width:680px; margin:26px auto 0; text-align:center;}
 .event-donate-amounts p{margin:0 0 12px; color:var(--brown);}
