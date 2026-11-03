@@ -1,6 +1,6 @@
-# MOAB Music Academy — Nonprofit Site
+# MOAB Música y Arte — Nonprofit Site
 
-A bilingual (EN/ES) static website for MOAB Music Academy, an independent nonprofit dedicated to music education. Built as plain HTML/CSS/JS with no build step — open `index.html` directly in a browser, or serve the folder with any static file server.
+A bilingual (EN/ES) static website for MOAB Música y Arte, an independent nonprofit dedicated to music education. Built as plain HTML/CSS/JS with no build step — open `index.html` directly in a browser, or serve the folder with any static file server.
 
 ## Structure
 
