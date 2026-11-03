@@ -322,6 +322,12 @@ html[data-lang="en"] .musical-promo-when span[data-i18n-es], html[data-lang="es"
 .event-banner{background:var(--paper); padding-bottom:0;}
 .event-banner figure{margin:0; border-radius:var(--radius); overflow:hidden; box-shadow:var(--shadow);}
 .event-banner img{width:100%; height:auto;}
+.event-tickets{background:var(--neutral-100);}
+.event-tickets-head{margin:0 auto 30px; text-align:center;}
+.event-tickets-widget{max-width:1024px; margin:0 auto;}
+.event-tickets-widget givebutter-widget{display:block; width:100%;}
+p.event-tickets-note{text-align:center; max-width:680px; margin:22px auto 0;}
+.event-tickets-note a{display:block; margin-top:8px; color:var(--accent-dark); font-weight:600; text-decoration:none;}
 .event-details{background:var(--paper);}
 .event-detail-grid{display:grid; grid-template-columns:1fr 1fr; gap:48px; align-items:center;}
 .event-note{margin:22px 0 0; font-size:0.86rem; color:var(--muted);}
