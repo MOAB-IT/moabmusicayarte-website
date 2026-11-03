@@ -144,11 +144,6 @@ givebutter-widget{display:inline-block;}
 .hero h1{font-size:2.6rem; line-height:1.15; margin:14px 0 18px; font-weight:700; color:var(--ink);}
 .hero p.lead{font-size:1.1rem; color:var(--brown); max-width:600px; margin-bottom:32px;}
 .hero-ctas{display:flex; gap:14px; flex-wrap:wrap;}
-/* Compact hero while a promo section follows it (remove the body class "has-promo" to restore) */
-.has-promo .hero{padding:44px 0 48px;}
-.has-promo .hero-logo{width:180px; height:180px; padding:10px;}
-.has-promo .hero h1{font-size:2.3rem; margin:10px 0 12px;}
-.has-promo .hero p.lead{font-size:1.04rem; margin-bottom:22px;}
 
 /* PAGE HERO (inner pages) */
 .page-hero{
@@ -189,28 +184,6 @@ section{padding:76px 0;}
 .section-head h2{font-size:2rem; margin:10px 0 12px; font-weight:700; color:var(--ink);}
 .section-head p{color:var(--muted); font-size:1.03rem;}
 
-.musical-promo{background:var(--ink); color:#fff; padding-top:52px;}
-.musical-promo-head{text-align:center; margin-bottom:26px;}
-.musical-promo-media{display:block; border-radius:var(--radius); overflow:hidden; box-shadow:0 24px 55px rgba(0,0,0,0.45);}
-.musical-promo-media img{width:100%; height:auto; transition:transform .3s ease;}
-.musical-promo-media:hover img{transform:scale(1.015);}
-.musical-promo-body{display:grid; grid-template-columns:1fr auto; gap:36px; align-items:center; margin-top:30px;}
-.musical-promo-actions{display:flex; flex-direction:column; align-items:flex-start;}
-.btn-lg{padding:14px 30px; font-size:1.02rem;}
-.musical-promo .eyebrow{color:var(--yellow);}
-.musical-promo h2{font-size:2.6rem; margin:10px 0 0; color:#fff;}
-.musical-promo p{color:var(--neutral-200); margin:0 0 14px;}
-.musical-promo p.musical-promo-when{color:#fff; font-weight:600;}
-.musical-promo-when span{display:block !important;}
-html[data-lang="en"] .musical-promo-when span[data-i18n-es], html[data-lang="es"] .musical-promo-when span[data-i18n-en]{display:none !important;}
-.musical-promo .hero-ctas{margin-top:0;}
-.btn-light{border:1.5px solid var(--neutral-100); color:var(--neutral-100); background:transparent;}
-.btn-light:hover{background:rgba(255,255,255,0.1);}
-.musical-promo-sponsor{
-  display:inline-block; margin-top:16px; color:var(--sponsor); font-weight:700; font-size:0.95rem; text-decoration:none;
-  border:1.5px solid var(--sponsor); border-radius:999px; padding:9px 20px; transition:background .18s ease, color .18s ease;
-}
-.musical-promo-sponsor:hover{background:var(--sponsor); color:var(--ink);}
 
 .mission{background:var(--paper);}
 .mission-grid{display:grid; grid-template-columns:1.1fr 0.9fr; gap:48px; align-items:center;}
@@ -433,10 +406,7 @@ footer{background:var(--ink); color:var(--neutral-300); padding:56px 0 24px;}
 @media (max-width:860px){
   .mission-grid, .impact-grid, .contact-grid, .event-detail-grid, .events-feature, .sponsor-why, .sponsor-signup, .sponsor-dates{grid-template-columns:1fr;}
   .tier-grid{grid-template-columns:repeat(2,1fr); row-gap:30px;}
-  .musical-promo-body{grid-template-columns:1fr; gap:20px;}
-  .musical-promo .hero-ctas{justify-content:flex-start;}
   .sponsor-widget{justify-self:center;}
-  .musical-promo h2{font-size:2rem;}
   .events-feature-text{padding:0 24px 24px;}
   .program-grid, .support-grid{grid-template-columns:repeat(2,1fr);}
   .about-features, .about-gallery{grid-template-columns:repeat(2,1fr);}
@@ -449,8 +419,6 @@ footer{background:var(--ink); color:var(--neutral-300); padding:56px 0 24px;}
   .page-hero-media{order:-1; max-width:360px; margin:0 auto;}
   .hero-inner{flex-direction:column; text-align:center;}
   .hero-logo{width:140px; height:140px; order:-1;}
-  .has-promo .hero{padding:32px 0 36px;}
-  .has-promo .hero-logo{width:110px; height:110px; padding:8px;}
   .hero-ctas{justify-content:center;}
   nav{
     display:none; position:absolute; top:100%; left:0; right:0; background:var(--ink);
