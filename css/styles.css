@@ -300,6 +300,18 @@ section{padding:76px 0;}
 .event-banner{background:var(--paper); padding-bottom:0;}
 .event-banner figure{margin:0; border-radius:var(--radius); overflow:hidden; box-shadow:var(--shadow);}
 .event-banner img{width:100%; height:auto;}
+.event-about{background:var(--paper);}
+.event-about-grid{display:grid; grid-template-columns:1.3fr 1fr; gap:48px; align-items:center;}
+.event-about p{color:var(--ink); font-size:1.03rem; margin:0 0 14px;}
+.event-highlights{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:14px;}
+.event-highlights li{display:flex; align-items:center; gap:18px; padding:18px 22px; background:var(--cream); border:1px solid var(--border); border-left:5px solid var(--accent-dark); border-radius:var(--radius);}
+.event-highlights strong{font-size:1.6rem; font-weight:800; color:var(--accent-dark); min-width:96px;}
+.event-highlights span{color:var(--brown); font-size:0.97rem;}
+html[data-lang="en"] .event-highlights span[data-i18n-en], html[data-lang="es"] .event-highlights span[data-i18n-es]{display:inline;}
+.event-donate-amounts{max-width:680px; margin:26px auto 0; text-align:center;}
+.event-donate-amounts p{margin:0 0 12px; color:var(--brown);}
+.event-donate-amounts p strong{display:block; color:var(--ink);}
+html[data-lang="en"] .event-tickets-note span[data-i18n-en], html[data-lang="es"] .event-tickets-note span[data-i18n-es]{display:inline;}
 .event-tickets{background:var(--neutral-100);}
 .event-tickets-head{margin:0 auto 30px; text-align:center;}
 .event-tickets-widget{max-width:1024px; margin:0 auto;}
@@ -404,7 +416,7 @@ footer{background:var(--ink); color:var(--neutral-300); padding:56px 0 24px;}
 }
 
 @media (max-width:860px){
-  .mission-grid, .impact-grid, .contact-grid, .event-detail-grid, .events-feature, .sponsor-why, .sponsor-signup, .sponsor-dates{grid-template-columns:1fr;}
+  .mission-grid, .impact-grid, .contact-grid, .event-detail-grid, .event-about-grid, .events-feature, .sponsor-why, .sponsor-signup, .sponsor-dates{grid-template-columns:1fr;}
   .tier-grid{grid-template-columns:repeat(2,1fr); row-gap:30px;}
   .sponsor-widget{justify-self:center;}
   .events-feature-text{padding:0 24px 24px;}
