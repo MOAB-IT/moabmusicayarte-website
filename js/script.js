@@ -1,12 +1,4 @@
 document.addEventListener('DOMContentLoaded', function () {
-  // Remove time-limited promotions (e.g. the Christmas musical) once their date has passed
-  var now = Date.now();
-  document.querySelectorAll('[data-hide-after]').forEach(function (el) {
-    var end = Date.parse(el.getAttribute('data-hide-after'));
-    if (!isNaN(end) && now >= end) el.parentNode.removeChild(el);
-  });
-  if (!document.querySelector('.musical-promo')) document.body.classList.remove('has-promo');
-
   // Persist language choice across pages
   var savedLang = null;
   try { savedLang = window.localStorage.getItem('moab-lang'); } catch (e) {}

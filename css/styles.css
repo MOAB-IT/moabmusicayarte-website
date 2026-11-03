@@ -144,7 +144,7 @@ givebutter-widget{display:inline-block;}
 .hero h1{font-size:2.6rem; line-height:1.15; margin:14px 0 18px; font-weight:700; color:var(--ink);}
 .hero p.lead{font-size:1.1rem; color:var(--brown); max-width:600px; margin-bottom:32px;}
 .hero-ctas{display:flex; gap:14px; flex-wrap:wrap;}
-/* Compact hero while a promo section follows it (reverts automatically when the promo ends) */
+/* Compact hero while a promo section follows it (remove the body class "has-promo" to restore) */
 .has-promo .hero{padding:44px 0 48px;}
 .has-promo .hero-logo{width:180px; height:180px; padding:10px;}
 .has-promo .hero h1{font-size:2.3rem; margin:10px 0 12px;}
