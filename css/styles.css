@@ -242,6 +242,11 @@ section{padding:76px 0;}
 .sponsor-page .event-date-month{background:var(--sponsor); color:var(--ink);}
 .sponsor-page .event-facts{border-top:5px solid var(--sponsor);}
 .sponsor-page .sponsor-date{border-left:5px solid var(--sponsor);}
+.badge-extended{display:inline-block; background:var(--accent-dark); color:#fff; font-size:0.72rem; font-weight:700; text-transform:uppercase; letter-spacing:1px; padding:3px 9px; border-radius:999px; vertical-align:middle; margin-bottom:4px;}
+.date-was{color:var(--brown-light); text-decoration-thickness:2px; text-decoration-color:var(--accent-dark); font-weight:500;}
+.date-new{color:var(--accent-dark); font-weight:800;}
+.event-date-day .date-was{display:block; font-size:0.85rem; line-height:1; margin-bottom:2px;}
+.sponsor-page .sponsor-date-extended{border-color:var(--accent-dark); border-left-color:var(--accent-dark); background:var(--paper); box-shadow:0 0 0 2px rgba(181,82,43,0.15);}
 
 .faq{background:var(--cream);}
 .faq-item{
